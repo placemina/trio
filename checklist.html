@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자가진단</title>
+</head>
+<style>
+    
+    h1{
+       position: absolute;
+       top:270px;
+       left: 770px;
+       font-family: Prentard;
+       font-size: 35pt;
+       color:rgb(65, 62, 62);
+    }
+    #past{
+        position: absolute;
+        top: 380px;
+        left: 700px;
+        text-align: center;
+        font-family: Prentard;
+        font-size: 12pt;
+        font-weight: Medium ;
+        color:rgb(65, 62, 62);
+    }
+
+    nav{ position: absolute;
+         top:480px;
+        font-family: Prentard;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    ul{
+        position:absolute;
+        top: 35px;
+        left:-50px;
+        width: 250px;
+        height: 100px;
+        list-style: none;
+        font-family: pretard;
+        font-size: 20px;
+        
+  
+
+    }
+    ul li{
+        text-align: center;
+        background-color: rgb(26, 27, 99);
+        padding: 35px;
+
+    }
+    li a{
+        text-decoration: none;
+        color: white;
+        
+    }
+    li:hover{
+        background-color: rgb(243, 187, 84);
+    }
+    #head{background-image: linear-gradient(to bottom right,rgb(243, 187, 84),rgb(26, 27, 99));
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width: 1950px;
+        height: 250px;
+    }
+    a.href{
+        color:rgb(65, 62, 62);
+    }
+    a:hover{
+        color: white
+    }
+    form{
+         position:absolute;
+         top: 465px;
+         left: 280px;
+         background-color: rgb(255, 255, 240);
+         width: 1500px;
+         font-family: Prentard;
+         font-size: 15pt;
+         font-weight: bold;
+         padding: 70px;
+         text-align: left;
+    }
+    input[type=checkbox]{padding-top: 70px;
+          margin-left: 80px; 
+    }
+    footer{   background-color: rgb(26, 27, 99);
+              position: absolute;
+              top: 1200px;
+              height: 175px;
+              left: 0px;
+              width: 1950px;
+              color: white;
+
+    }
+    .footer{ position: absolute;
+            display: inline;
+            top:-8px;
+            padding : 50px;
+            margin: 20px;
+
+          
+    }
+      #checklist{
+                           width: 20px;
+                           height: 20px;
+    }
+
+
+    input[type=button]{
+                        background-color: rgb(10, 11, 59);
+                        border: none;
+                        padding-top: 20px;
+                        padding-left: 50px;
+                        padding-right: 50px;
+                        padding-bottom: 20px;
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: white;
+                        text-align: center;
+                        margin: 12px;
+                        margin-left: 1000px;
+
+    }
+    input[type=button]:hover{
+        background-color: rgb(243, 187, 84);
+        border: none;
+    }
+    input[type=reset]{
+                        background-color: rgb(10, 11, 59);
+                        border: none;
+                        padding-top: 20px;
+                        padding-left: 50px;
+                        padding-right: 50px;
+                        padding-bottom: 20px;
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: white;
+                        text-align: center;
+                        margin: 12px;
+                        margin-left: 2px;
+                    }
+    input[type=reset]:hover{
+        background-color: rgb(243, 187, 84);}
+
+        textarea{
+            background-color: rgb(243, 187, 84, 0);
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            color: rgb(26, 27, 99);
+            margin-left: 70px;
+        }
+</style>
+
+<body>
+    <header id="head">
+    <ul style="list-style: none; text-align: left ;font-family: Prentard;
+    font-size: 15pt;font-weight: bold; margin:20px; ">
+        <li style="position: absolute; top: -50px; left: 1350px; width: 100px; display: inline; background-color:rgba(26, 27, 99, 0); "><a href="myhome.html" class="href">마이페이지</a></li>
+        <li style="position: absolute; top: -50px; left: 1520px; width: 100px; display: inline; background-color:rgba(26, 27, 99, 0); "><a href="login.html" class="href">장바구니</a></li>
+        <li style="position: absolute; top: -50px; left: 1700px; width: 60px;display: inline; background-color:rgba(26, 27, 99, 0);"><a href="login.html"class="href" >로그인</a></li>
+        <li style="position: absolute; top:-50px; left: -400px; width: 1200px; display:inline; background-color:rgba(26,27, 99, 0);"><a href="index.html" class="href" style="font-size: 70px; font-weight: bold;">Pannic Dis</a></li>
+    </ul>
+</header>
+    <aside>
+    <h1>공황장애 자가진단</h1>
+    <p id="past"> 공황장애는 자신을 모르게 오는 경우가 많습니다. <br>혹시 본인이 공황이 온 것 헷갈리시다면 자가진단 통해 확인하는게 중요합니다. </p>
+    <form>
+    <input type="checkbox" id="checklist" value="checklist"> 심장이 박동이 빨라진다.
+    <input type="checkbox" id="checklist" value="checklist" style="margin-left: 400px;"> 땀이 심하게 난다.<br><br>
+    <input type="checkbox" id="checklist" value="checklist"> 손발이나 몸이 떨린다.
+    <input type="checkbox" id="checklist" value="checklist" style="margin-left: 420px;"> 숨이 가빠지면서 막힐 듯한 느낌이 든다.<br><br>
+    <input type="checkbox" id="checklist" value="checklist"> 질식할 것 같다. 
+    <input type="checkbox" id="checklist" value="checklist" style="margin-left: 480px;"> 가슴 부위의 통증이나 불쾌감이 느껴진다.<br><br>
+    <input type="checkbox" id="checklist" value="checklist">오한이 나고 몽이 화끈거리다
+    <input type="checkbox" id="checklist" value="checklist" style="margin-left:364px;">어지럽고 휘청거리거나 혹은 실신할 것 같다.<br><br>
+    <input type="checkbox" id="checklist" value="checklist">주위가 비현실적인 것 같고 자신이 다른 사람인 것 같다.
+    <input type="checkbox" id="checklist" value="checklist" style="margin-left:124px;">자제력을 잃거나 미쳐버릴 것 같다.<br><br>
+    <input type="checkbox" id="checklist" value="checklist">죽음에 대한 공포감이 크다.
+    <input type="checkbox" id="checklist" value="checklist" style="margin-left: 380px;">소화가 안 되고 체할 때 증상이 심해진다.<br><br>
+    <input type="checkbox" id="checklist" value="checklist">역류가 잘 된다.<br><br>
+    <input type="button" onclick="checkbox()" value="결과">
+     <input type="reset" value="다시하기"><br><br>
+    <textarea rows="5" cols="25" id="result"></textarea>
+</form>
+<script>
+function checkbox(){ 
+    if (document.getElementById("checkbox".checked)){
+        document.getElementById("result").value="공황발작 경험있거나 초기증상이므로 주의 하시기 바랍니다"
+    }
+    else{
+        document.getElementById("result").value="심리적으로 안정상태입니다"
+    }
+
+}
+</script>
+</aside>
+    <nav id="cate"> 자가진단
+        <ul>
+            <li><a href="About2.html">About</a></li>
+            <li style="background-color: rgb(243, 187, 84);"><a href="checklist.html">자가진단</a></li>
+            <li><a href="login.html">shopping</a></li>
+            <li><a href="login.html">헬스케어</a></li></li>
+        </ul>
+        </nav>
+        <footer>
+            <p class="footer" style="left: 50px; font-weight: bold; font-size: 35pt;">Pannic Dis</p>
+            <p class="footer" style="left: 350px; top:15px; font-size: 12pt;" > 고객센터</p>
+            <p class="footer" style="left: 500px; top:15px;"> Design by KimSeokmin(김석민)</p>
+            <p class="footer" style="left: 790px; top:15px;"> 개인정보처리방침</p>
+            <p class="footer" style="left: 980px; top:15px;"> 이용약관</p>
+            <p class="footer" style="left: 1120px; top:15px"> 문의: 010-8754-7728</p>
+            <p class="footer" style="left: 1370px; top:15px"> 이메일:kimseokminkim@gmail.com</p>
+        </footer>
+</body>
+</html>

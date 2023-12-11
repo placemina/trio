@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panic Dis</title>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(to bottom right,rgb(243, 187, 84),rgb(26, 27, 99));
+        background-repeat: no-repeat;
+        height: 1500px;
+    }
+    .text{
+           color:white;
+           text-align: center;
+    }
+    h1{
+        font-family: Prentard;
+        font-size: 100pt;
+        margin-top: 50px;
+        padding-top: 20px;
+        animation-name: headline;
+        animation-duration: 5s;
+ }
+    @keyframes headline{
+        0%{ opacity: 0.2;}
+        25%{opacity: 0.4;}
+        50%{opacity: 0.6;}
+        75%{opacity: 0.8;}
+        100%{opacity: 1.0;}
+    }
+    #p{
+        font-family: Prentard;
+        font-size: 17.5pt;
+        font-weight: Medium;
+        margin-top: 0px;
+        padding:20px;
+        animation-name: subline;
+        animation-duration:5s;
+    }
+    @keyframes subline {
+        0%{ opacity: 0.2;}
+        25%{opacity: 0.4;}
+        50%{opacity: 0.6;}
+        75%{opacity: 0.8;}
+        100%{opacity: 1.0;}
+    }
+    #n{
+        list-style: none;
+        text-align: center;
+        margin-top:50px;
+        padding-top:50px;
+        font-family: Prentard;
+        font-size: 15pt;
+        font-weight: bold;
+    }
+    .nav{
+        display: inline;
+        padding: 50px
+    }
+
+    li a{
+        text-decoration: none;
+        border: 2px solid white;
+        padding: 25px;
+        background-color: white;
+        color:rgb(65, 62, 62);
+        border-radius: 50px;
+    }
+    li a:hover{ text-decoration: none;
+                background-color: rgb(26, 27, 99);
+                color: white;
+                border: 2px solid rgb(26, 27, 99);
+                
+
+    }
+ 
+   img{
+    margin-top: 70px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+   }
+    footer{
+        clear: both;
+        margin-top: -8px;
+        margin-left: -8px;
+        margin-right: -8px;
+        height: 100px;
+        background-color: rgb(10, 11, 59);
+        color: white;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .footer{ 
+              display: inline;
+              padding-left:50px;
+    }
+</style>
+<body>
+    <ul style="list-style: none; text-align: right;font-family: Prentard;
+    font-size: 15pt;font-weight: bold; margin:20px;">
+        <li style="display: inline-block; padding-top: 20px;"><a href="myhome.html" style="background-color:rgba(255, 255, 255, 0);
+        border: 2px solid rgba(255,255,255,0);">마이페이지</a></li>
+        <li style="display: inline-block;"><a href="index.html" style="background-color:rgba(255, 255, 255, 0); border: 2px solid rgba(255,255,255,0);">로그아웃</a></li>
+        <li style="display: inline-block;"><a href="shopping.html" style="background-color:rgba(255, 255, 255, 0); border: 2px solid rgba(255,255,255,0);">장바구니</a></li>
+    </ul>
+        <h1 class="text">Panic Dis</h1>
+        <p class="text" id="p">"공황장애인분들 위한 서비스"</p>
+        <ul id="n">
+            <li class="nav"><a href="About.html">About</a></li>
+            <li class="nav"><a href="checklist.html">자가진단</a></li>
+            <li class="nav"><a href="shop.html">shopping</a></li>
+            <li class="nav"><a href="health.html">헬스케어</a></li>
+        </ul>
+        <img src="견과류.jpg" width="1200" id="img"></div>
+        <script>
+            let num=0;
+        function show(){
+            if (num==0){
+                document.getElementById("img").src="운동.jpg";
+                num=1;
+            }
+           else if(num==1){
+            document.getElementById("img").src="스트레스.jpg";
+            num=2;
+           }
+           else{
+            document.getElementById("img").src="견과류.jpg";
+            num=0;
+           }
+            setTimeout('show()',1500);
+        }
+        show();
+        </script>
+        <footer>
+            <p class="footer" style="font-weight: bold; font-size: 35pt;">Pannic Dis</p>
+            <p class="footer"style=" font-size: 12pt;"> 고객센터</p>
+            <p class="footer"style= "font-size: 12pt;"> Design by KimSeokmin(김석민)</p>
+            <p class="footer"style=" font-size: 12pt;"> 개인정보처리방침</p>
+            <p class="footer"style=" font-size: 12pt;"> 이용약관</p>
+            <p class="footer"style="f font-size: 12pt;"> 문의: 010-8754-7728</p>
+            <p class="footer"style="f font-size: 12pt;"> 이메일:kimseokminkim@gmail.com</p>
+        </footer>
+</html>

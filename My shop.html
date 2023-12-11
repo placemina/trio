@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumin island</title>
+    <style>
+       html,body{height:100%;}
+       header{border: 1px solid gray;}
+       nav{border:1px solid gray;}
+       aside{float:left;
+             width:30%;
+             height: 70%;
+             border:1px solid gray;}
+       section{float: right;
+               width: 69%;
+            height: 70%;
+            border: 1px solid gray;}
+       footer{ clear: both; border: 1px solid gray;}
+            </style>
+       
+</head>
+<body>
+<header>
+<h1><img src="헤드.jpg" width="100"/><a href="My shop.html">Lumin island</a>   
+</h1>
+
+</header>
+<nav>
+<ul>
+    <li><a href="My shop.html">Home</a></li>
+    <li><a href="About.html" target="_blank">About</a></li>
+    <li><a href="News.html" target="_blank">News</a></li>
+    <li><a href="my Account.html" target="_blank">My Account</a></li>
+    <li><a href="Contacts.html" target="_blank">Contacts</a></li>
+</ul>
+</nav>
+ <aside>
+<ul>
+    <li><a href="Computer.html" target="iframe1">컴퓨터</a></li>
+    <li><a href="Clothes.html" target="iframe1">의류</a></li>
+    <li><a href="Music.html" target="iframe1">음악</a></li>
+    <li><a href="Movie.html" target="iframe1">영화</a></li>
+    <li><a href="Sports.html" target="iframe1">스포츠/레저</a></li>
+    <li><a href="Interior.html" target="iframe1">가구/인테리어</a></li>
+    <li><a href="Food.html" target="iframe1">식품</a></li>
+
+</ul>
+ </aside>
+ <section>
+    <iframe src="Computer.html" width="1000" height="700" name="iframe1">
+    <iframe src="Clothes.html" width="1000" height="700" name="iframe1">
+    <iframe src="Music.html" width="1000" height="700" name="iframe1">
+    <iframe src="Movie.html" width="1000" height="700" name="iframe">
+    <ifrmae src="Sports.html" width="1000" height="700" name="iframe">
+    <ifrmae src="Interior.html" width="1000" height="700" name="iframe">
+    <ifrmae src="Food.html" width="1000" height="700" name="iframe"></ifrmae>
+    </iframe>
+ </section>
+ <footer>
+<h3> Shopping Cart</h3>
+<p>현재 쇼핑카트에 물품이 없습니다. <br>
+<a href="shopping cart.html" target="_blank">쇼핑카트 보기</a></p>
+<h3>Log In</h3>
+<form action="input.jsp" method="post">
+    아이디: <input type="text" name="input" /> <br />
+    패스워드: <input type="text" name="input" /> <br />
+    <input type="submit" value="로그인">
+    <input type="reset" value="초기화">
+    <p><a href="sign up.html" target="_blank">회원가입</a>
+    <a href="passward.html" target="_blank">비밀번호 분실</a></p>
+</form>
+ </footer>   
+</body>
+</html>
